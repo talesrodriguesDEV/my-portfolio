@@ -35,7 +35,7 @@ const projects = [
     title: 'TR Bank',
     // link: 'https://github.com/talesrodriguesDEV/trbank',
     code: 'https://github.com/talesrodriguesDEV/trbank',
-    description: 'It\s a Full Stack Bank built with React, Tailwind CSS, TypeScript, Node, Express, Mongoose, Docker and JWT.',
+    description: 'It\s a Full Stack app that resembles a Bank built with React, Tailwind CSS, TypeScript, Node, Express, Mongoose, Docker and JWT authentication.',
     category: 'Full Stack',
     image: bank,
     // date: '06/12/2022',
