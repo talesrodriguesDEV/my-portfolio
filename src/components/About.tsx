@@ -8,7 +8,7 @@ export default function About({ english }: { english: boolean }) {
   const PT = 'Aoba! Meu nome é Tales, tenho 21 anos e sou de Goiânia. Atuo como desenvolvedor Full Stack com foco em React e Node.'
 
   return (
-    <section className='flex flex-col items-center'>
+    <section className='flex flex-col items-center lg:justify-center lg:w-[480px]'>
       <Image className='rounded-full my-24' width={200} height={200} src={me} alt='Tales Rodrigues' />
       <p className='text-justify px-8'>{english ? EN : PT}</p>
       <Stacks />

@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className='flex flex-col lg:flex-row lg:justify-between lg:h-screen'>
         <Header english={english} setEnglish={setEnglish} />
         <About english={english} />
         <Projects english={english} />

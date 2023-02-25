@@ -8,6 +8,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 15s linear infinite',
         'inverse-spin-slow': 'inverse 15s linear infinite',
+      },
+      screens: {
+        'micro': '500px',
       }
     },
   },

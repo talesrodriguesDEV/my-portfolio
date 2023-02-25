@@ -29,11 +29,11 @@ export default function Projects({ english }: { english: boolean }) {
 
   return (
     <section className='flex flex-col items-center px-8 mt-8 justify-center'>
-      <div className='min-h-[510px] flex flex-col items-center bg-black text-white px-4 py-1 rounded-lg'>
+      <div className='min-h-[510px] lg:min-h-[620px] lg:w-[500px] flex flex-col items-center bg-black text-white px-4 py-1 md:py-4 rounded-lg group'>
         <h2 className='text-2xl'>{projs[currentProjectIndex].title}</h2>
-        <Image className='mb-6 mt-1 rounded-lg' src={projs[currentProjectIndex].image} alt={projs[currentProjectIndex].title} />
+        <Image className='mb-6 mt-1 rounded-lg w-[400px]' src={projs[currentProjectIndex].image} alt={projs[currentProjectIndex].title} />
         <p className='text-justify'>{projs[currentProjectIndex].description}</p>
-        <Link className='w-2/5 flex justify-around items-center mt-6 border rounded-md p-2 bg-[#111111]' href={projs[currentProjectIndex].code} target='_blank'>{english ? linkEN : linkPT}<BsCodeSlash /></Link>
+        <Link className='w-2/5 flex justify-around items-center mt-6 border rounded-md p-2 bg-[#111111] max-w-[160px]' href={projs[currentProjectIndex].code} target='_blank'>{english ? linkEN : linkPT}<BsCodeSlash /></Link>
       </div>
       <div className='flex justify-between w-1/4 mt-2'>
         {projects.map((_project, index) => {
@@ -41,10 +41,10 @@ export default function Projects({ english }: { english: boolean }) {
           return <BsSquare key={index} onClick={() => setCurrentProjectIndex(index)} />
         })}
       </div>
-      <div className='absolute left-0' onClick={previousProject}>
+      <div className='absolute left-0 lg:hidden' onClick={previousProject}>
         <FaChevronLeft className='text-3xl' />
       </div>
-      <div className='absolute right-0' onClick={nextProject}>
+      <div className='absolute right-0 lg:hidden' onClick={nextProject}>
         <FaChevronRight className='text-3xl' />
       </div>
     </section>
