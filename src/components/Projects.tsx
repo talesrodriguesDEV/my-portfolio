@@ -35,7 +35,7 @@ export default function Projects({ english }: IDefaultComponentProps) {
         <h2 className='text-2xl'>{`${projs[currentProjectIndex].title} - ${projs[currentProjectIndex].date}`}</h2>
         <Image className='mb-6 mt-1 rounded-lg w-[400px]' src={projs[currentProjectIndex].image} alt={projs[currentProjectIndex].title} />
         <p className='text-justify'>{projs[currentProjectIndex].description}</p>
-        <Link className='w-2/5 flex justify-around items-center mt-6 border rounded-md p-2 bg-[#111111] max-w-[160px]' href={projs[currentProjectIndex].code} target='_blank'>
+        <Link className='w-2/5 flex justify-around items-center mt-4 border rounded-md p-2 bg-[#111111] max-w-[160px]' href={projs[currentProjectIndex].code} target='_blank'>
           {code}
           <BsCodeSlash />
         </Link>
@@ -46,10 +46,10 @@ export default function Projects({ english }: IDefaultComponentProps) {
           return <BsSquare key={index} onClick={() => setCurrentProjectIndex(index)} />
         })}
       </div>
-      <div className='absolute left-0 lg:hidden' onClick={previousProject}>
+      <div className='absolute left-0.5 lg:hidden' onClick={previousProject}>
         <FaChevronLeft className='text-3xl' />
       </div>
-      <div className='absolute right-0 lg:hidden' onClick={nextProject}>
+      <div className='absolute right-0.5 lg:hidden' onClick={nextProject}>
         <FaChevronRight className='text-3xl' />
       </div>
     </section>
