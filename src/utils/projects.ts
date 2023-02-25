@@ -21,7 +21,7 @@ const projetos = [
     date: '21/03/2023',
   },
   {
-    title: 'Tales\' Observatory',
+    title: 'Observatory',
     code: 'https://github.com/talesrodriguesDEV/tales-observatory',
     description: 'Observatório astronômico contruído com Next.js. Descubra imagens incríveis do Universo (com detalhes) e salve suas favoritas.',
     category: 'Frontend',
@@ -56,7 +56,7 @@ const projects = [
     date: '03/21/2023',
   },
   {
-    title: 'Tales\' Observatory',
+    title: 'Observatory',
     code: 'https://github.com/talesrodriguesDEV/tales-observatory',
     description: 'It\'s an astronomical observatory built with Next.js. You can find amazing Universe pictures, access full info about them and save your favorites.',
     category: 'Frontend',

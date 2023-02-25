@@ -1,9 +1,11 @@
+import { useState } from 'react'
+
+import Head from 'next/head'
+
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Projects from '@/components/Projects'
-import Head from 'next/head'
-import { useState } from 'react'
 
 export default function Home() {
   const [english, setEnglish] = useState(false)

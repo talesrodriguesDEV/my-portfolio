@@ -10,3 +10,9 @@
     transform: rotate(-360deg);
   }
 }
+
+@layer components {
+  .stack {
+    @apply animate-inverse-spin-slow rotate-45
+  }
+}
