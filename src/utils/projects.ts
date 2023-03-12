@@ -10,7 +10,7 @@ const projetos = [
     description: 'Aplicativo React. Escolha uma palavra e sorteie uma citação que a contenha. Advinhe "Quem Disse?" e salve suas citações favoritas.',
     category: 'Frontend',
     image: who,
-    date: '24/03/2023',
+    date: '24/02/2023',
   },
   {
     title: 'Quotes API',
@@ -18,7 +18,7 @@ const projetos = [
     description: 'API CRUD construída com Node. O objetivo foi isolar as regras de negócio das dependências, buscando aplicar "Clean Architecture".',
     category: 'Backend',
     image: api,
-    date: '21/03/2023',
+    date: '21/02/2023',
   },
   {
     title: 'Observatory',
@@ -45,7 +45,7 @@ const projects = [
     description: 'React app. Choose a keyword and get a random quote about it. You\'ll also be able to guess "Who said it?" and save your favorite quotes.',
     category: 'Frontend',
     image: who,
-    date: '03/24/2023',
+    date: '02/24/2023',
   },
   {
     title: 'Quotes API',
@@ -53,7 +53,7 @@ const projects = [
     description: 'It\'s a CRUD API about Quotes and Authors built with Node. The goal was to isolate the business rules from the dependencies (Express and MongoDB).',
     category: 'Backend',
     image: api,
-    date: '03/21/2023',
+    date: '02/21/2023',
   },
   {
     title: 'Observatory',
@@ -66,7 +66,7 @@ const projects = [
   {
     title: 'TR Bank',
     code: 'https://github.com/talesrodriguesDEV/trbank',
-    description: 'Full Stack app that resembles a Bank built with React, Tailwind CSS, TypeScript, Node, Express, Mongoose, Docker and JWT authentication.',
+    description: 'Full Stack app that resembles a Bank. Built with React, Tailwind CSS, TypeScript, Node, Express, Mongoose, Docker and JWT authentication.',
     category: 'Full Stack',
     image: bank,
     date: '12/06/2022',
