@@ -20,7 +20,7 @@ export default function Header({ english, setEnglish }: IHeaderProps) {
           <FaLinkedin />
         </Link>
       </div>
-      <span onClick={() => { setEnglish(previous => !previous) }}>{english ? '🇧🇷' : '🇺🇸'}</span>
+      <span className='cursor-pointer' onClick={() => { setEnglish(previous => !previous) }}>{english ? '🇧🇷' : '🇺🇸'}</span>
     </header>
   )
 }

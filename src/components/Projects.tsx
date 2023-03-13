@@ -52,7 +52,7 @@ export default function Projects({ english }: IDefaultComponentProps) {
   return (
     <section className='flex flex-col items-center px-8 mt-8 justify-center'>
       <div
-        className='min-h-[510px] lg:min-h-[620px] lg:w-[500px] flex flex-col items-center bg-black text-white px-4 py-1 md:py-4 rounded-lg group'
+        className='min-h-[510px] lg:min-h-[620px] lg:w-[500px] flex flex-col items-center bg-black text-white px-4 py-1 md:py-4 rounded-lg'
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -70,8 +70,8 @@ export default function Projects({ english }: IDefaultComponentProps) {
       </div>
       <div className='flex justify-between w-1/4 mt-2'>
         {projects.map((_project, index) => {
-          if (index === currentProjectIndex) return <BsFillSquareFill key={index} />
-          return <BsSquare key={index} onClick={() => setCurrentProjectIndex(index)} />
+          if (index === currentProjectIndex) return <BsFillSquareFill className='cursor-pointer' key={index} />
+          return <BsSquare className='cursor-pointer' key={index} onClick={() => setCurrentProjectIndex(index)} />
         })}
       </div>
     </section>
