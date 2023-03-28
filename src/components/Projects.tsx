@@ -50,7 +50,7 @@ export default function Projects({ english }: IDefaultComponentProps) {
   const projs = english ? projects : projetos
 
   return (
-    <section className='flex flex-col items-center px-8 mt-8 justify-center'>
+    <section className='flex flex-col items-center px-8 mt-8 justify-center md:mt-0'>
       <div
         className='min-h-[510px] lg:min-h-[620px] lg:w-[500px] flex flex-col items-center bg-black text-white px-4 py-1 md:py-4 rounded-lg'
         onTouchStart={handleTouchStart}
